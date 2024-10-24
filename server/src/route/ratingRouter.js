@@ -1,0 +1,10 @@
+const express = require("express")
+const router = express.Router()
+
+const authenticate  = require('../middleware/authenticate')
+const ratingController = require('../controller/ratingController')
+
+router.post('/create',authenticate,ratingController.createRating)
+router.put('/product/:productId',authenticate,ratingController.getAllRatings)
+
+module.exports = router

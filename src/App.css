@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.imageHandler{
+  height: 90vh;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
